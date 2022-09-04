@@ -19,7 +19,7 @@ import { MailConfigService } from 'src/config/mail/mail-config.service';
           },
         },
         defaults: {
-          from: `"Ladryk - no reply" <${mailConfigService.username}>`,
+          from: `"${mailConfigService.senderName}" <${mailConfigService.username}>`,
         },
         template: {
           dir: join(__dirname, '..', 'mail/templates'),

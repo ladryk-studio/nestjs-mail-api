@@ -17,6 +17,11 @@ export class MailConfigService {
     return this.configService.get<string>('mail.password');
   }
 
+
+  get senderName(): string {
+    return this.configService.get<string>('mail.senderName');
+  }
+
   get port(): number {
     return Number(this.configService.get<number>('mail.port'));
   }

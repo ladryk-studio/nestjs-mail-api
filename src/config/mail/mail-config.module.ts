@@ -13,6 +13,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
         MAIL_USERNAME: Joi.string().default('root'),
         MAIL_PASSWORD: Joi.string().default('password'),
         MAIL_PORT: Joi.number().default(465),
+        MAIL_SENDER_NAME: Joi.string().default('no-reply'),
       }),
     }),
   ],
